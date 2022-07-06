@@ -1,4 +1,4 @@
-#include<iostream>
+ï»¿#include<iostream>
 using namespace std;
 
 #define tab "\t"
@@ -36,7 +36,7 @@ void main()
 		}
 	}
 	c = (a - b);
-	cout <<"Îïðåäåëèòåëü ìàòðèöû òðåòüåãî ïîðÿäêà="<< c<<endl;
+	cout <<"ÐžÐ¿Ñ€ÐµÐ´ÐµÐ»Ð¸Ñ‚ÐµÐ»ÑŒ Ð¼Ð°Ñ‚Ñ€Ð¸Ñ†Ñ‹ Ñ‚Ñ€ÐµÑ‚ÑŒÐµÐ³Ð¾ Ð¿Ð¾Ñ€ÑÐ´ÐºÐ°="<< c<<endl;
 	
 	
 }
