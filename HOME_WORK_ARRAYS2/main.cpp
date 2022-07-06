@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <Windows.h>
 using namespace std;
 
@@ -18,7 +18,7 @@ void main()
 		cout << arr[i] << tab;
 	}
 	cout << endl;
-	cout << "Ââåäèòå êîëè÷åñòâî ñäâèãîâ :"; cin >> shifts;
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÐºÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ ÑÐ´Ð²Ð¸Ð³Ð¾Ð² :"; cin >> shifts;
 	for (int i = 0; i < shifts; i++)
 	{
 		buffer = arr[9];
@@ -40,13 +40,13 @@ void main()
 
 #ifdef UNIQUE_RANDOM1
 	int arr[n];
-	//çàïîëíåíèå ìàññèâà ñëó÷àéíûìè ÷èñëàìè
+	//Ð·Ð°Ð¿Ð¾Ð»Ð½ÐµÐ½Ð¸Ðµ Ð¼Ð°ÑÑÐ¸Ð²Ð° ÑÐ»ÑƒÑ‡Ð°Ð¹Ð½Ñ‹Ð¼Ð¸ Ñ‡Ð¸ÑÐ»Ð°Ð¼Ð¸
 	int minRand, maxRand;
 	do
 	{
-		cout << "Ââåäèòå ìèíèìàëüíîå ñëó÷àéíîå ÷èñëî:"; cin >> minRand;
-		cout << "Ââåäèòå ìàêñèìàëüíîå ñëó÷àéíîå ÷èñëî:"; cin >> maxRand;
-		if (minRand >= maxRand)cout << "Error: çíà÷åíèå íåêîððåêòíû , ïîïðîáóéòå åùå ðàç." << endl;
+		cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¼Ð¸Ð½Ð¸Ð¼Ð°Ð»ÑŒÐ½Ð¾Ðµ ÑÐ»ÑƒÑ‡Ð°Ð¹Ð½Ð¾Ðµ Ñ‡Ð¸ÑÐ»Ð¾:"; cin >> minRand;
+		cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¼Ð°ÐºÑÐ¸Ð¼Ð°Ð»ÑŒÐ½Ð¾Ðµ ÑÐ»ÑƒÑ‡Ð°Ð¹Ð½Ð¾Ðµ Ñ‡Ð¸ÑÐ»Ð¾:"; cin >> maxRand;
+		if (minRand >= maxRand)cout << "Error: Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ Ð½ÐµÐºÐ¾Ñ€Ñ€ÐµÐºÑ‚Ð½Ñ‹ , Ð¿Ð¾Ð¿Ñ€Ð¾Ð±ÑƒÐ¹Ñ‚Ðµ ÐµÑ‰Ðµ Ñ€Ð°Ð·." << endl;
 	} while (minRand >= maxRand);
 
 	for (int i = 0; i < n; i++)
@@ -59,7 +59,7 @@ void main()
 	}
 	cout << endl;
 #endif // UNIQUE_RANDOM1
-	cout << "Íàõîæäåíèå ïîâòîðÿþùèõñÿ ýëåìåíòîâ ìàññèâà." << endl;
+	cout << "ÐÐ°Ñ…Ð¾Ð¶Ð´ÐµÐ½Ð¸Ðµ Ð¿Ð¾Ð²Ñ‚Ð¾Ñ€ÑÑŽÑ‰Ð¸Ñ…ÑÑ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð² Ð¼Ð°ÑÑÐ¸Ð²Ð°." << endl;
 	int  arr[n];
 	srand(time(NULL));
 	for (int i = 0; i < n; i++)
@@ -98,10 +98,10 @@ void main()
 				counter++;
 			}	
 		}
-         if(counter==1) cout<< arr[i]<< " ïîâòîðÿåòñÿ â ìàññèâå "<< counter << "ðàç"<<endl;
+         if(counter==1) cout<< arr[i]<< " Ð¿Ð¾Ð²Ñ‚Ð¾Ñ€ÑÐµÑ‚ÑÑ Ð² Ð¼Ð°ÑÑÐ¸Ð²Ðµ "<< counter << "Ñ€Ð°Ð·"<<endl;
 		 if (counter > 3)
 		 {
-			 cout << arr[i] << " ïîâòîðÿåòñÿ â ìàññèâå " << counter << "ðàçà" << endl;
+			 cout << arr[i] << " Ð¿Ð¾Ð²Ñ‚Ð¾Ñ€ÑÐµÑ‚ÑÑ Ð² Ð¼Ð°ÑÑÐ¸Ð²Ðµ " << counter << "Ñ€Ð°Ð·Ð°" << endl;
 			 a = arr[i];
 		 }
         counter = 1;
