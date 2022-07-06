@@ -1,4 +1,4 @@
-#include <iostream>
+Ôªø#include <iostream>
 #include <Windows.h>
 using namespace std;
 //#define HOME_WORK
@@ -6,12 +6,12 @@ using namespace std;
 void main()
 {
 	setlocale(LC_ALL, "");
-	cout << "—‰‚Ë„ Ï‡ÒÒË‚‡ ÒÓÒÚ‡ˇ¯Â„Ó ËÁ ‰ÂÒˇÚˇ ÔÓÒ‰Â‰Ó‚‡ÚÂÎ¸Ì˚ı ˆËÙ."<<endl;
+	cout << "–°–¥–≤–∏–≥ –º–∞—Å—Å–∏–≤–∞ —Å–æ—Å—Ç–∞—è—à–µ–≥–æ –∏–∑ –¥–µ—Å—è—Ç—è –ø–æ—Å–¥–µ–¥–æ–≤–∞—Ç–µ–ª—å–Ω—ã—Ö —Ü–∏—Ñ—Ä."<<endl;
 	const int n = 10;
 	int arr[n]={1,2,3,4,5,6,7,8,9,10};
 #ifdef HOME_WORK
 	int value, t, max, min;
-	cout << "¬‚Â‰ËÚÂ Ò Í‡ÍÓÈ ˆËÙ˚ Ì‡˜ÌÂÚÒˇ Ï‡ÒÒË‚ :"; cin >> value;
+	cout << "–í–≤–µ–¥–∏—Ç–µ —Å –∫–∞–∫–æ–π —Ü–∏—Ñ—Ä—ã –Ω–∞—á–Ω–µ—Ç—Å—è –º–∞—Å—Å–∏–≤ :"; cin >> value;
 	for (int i = 0; i < n; i++)
 	{
 		arr[i] = value++;
@@ -22,7 +22,7 @@ void main()
 	max = arr[9];
 	min = arr[0];
 	int shift;
-	cout << "¬‚Â‰ËÚÂ Ì‡ ÒÍÓÎ¸ÍÓ Ì‡‰Ó Ò‰‚ËÌÛÚ¸ Ï‡ÒÒË‚:"; cin >> shift;
+	cout << "–í–≤–µ–¥–∏—Ç–µ –Ω–∞ —Å–∫–æ–ª—å–∫–æ –Ω–∞–¥–æ —Å–¥–≤–∏–Ω—É—Ç—å –º–∞—Å—Å–∏–≤:"; cin >> shift;
 	t = shift;
 	for (int i = 0; i < n - t; i++)
 	{
@@ -41,12 +41,12 @@ void main()
 #endif HOME_WORK
 
 	int value,shifts;
-	//cout << "¬‚Â‰ËÚÂ ˝ÎÂÏÂÌÚ˚ Ï‡ÒÒË‚‡:"; cin >> value;
+	//cout << "–í–≤–µ–¥–∏—Ç–µ —ç–ª–µ–º–µ–Ω—Ç—ã –º–∞—Å—Å–∏–≤–∞:"; cin >> value;
 	for (int i = 0; i < n; i++)
 		cout << arr[i] << "\t";
 	cout << endl;
-	//Ò‰‚Ë„ Ï‡ÒÒË‚‡
-	cout << "¬‚Â‰ËÚÂ ÍÓÎË˜ÂÒÚ‚Ó Ò‰‚Ë„Ó‚ :"; cin >> shifts;
+	//—Å–¥–≤–∏–≥ –º–∞—Å—Å–∏–≤–∞
+	cout << "–í–≤–µ–¥–∏—Ç–µ –∫–æ–ª–∏—á–µ—Å—Ç–≤–æ —Å–¥–≤–∏–≥–æ–≤ :"; cin >> shifts;
 	for (int i = 0; i < shifts; i++)
 	{
 		int buffer = arr[0];
