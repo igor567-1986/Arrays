@@ -2,6 +2,7 @@
 using namespace std;
 
 #define tab "\t"
+#define delimetr "\n--------------------\n"
 
 void main()
 {

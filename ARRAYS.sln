@@ -23,6 +23,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "2D", "2D\2D.vcxproj", "{4DE
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RULE_OF_SARRUS", "RULE_OF_SARRUS\RULE_OF_SARRUS.vcxproj", "{1524B10E-3E8E-45FC-BA03-7DF81AE38615}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "2D_HOME_WORK", "2D_HOME_WORK\2D_HOME_WORK.vcxproj", "{EEC9820A-E1DA-4906-A618-C7310A068D60}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -111,6 +113,14 @@ Global
 		{1524B10E-3E8E-45FC-BA03-7DF81AE38615}.Release|x64.Build.0 = Release|x64
 		{1524B10E-3E8E-45FC-BA03-7DF81AE38615}.Release|x86.ActiveCfg = Release|Win32
 		{1524B10E-3E8E-45FC-BA03-7DF81AE38615}.Release|x86.Build.0 = Release|Win32
+		{EEC9820A-E1DA-4906-A618-C7310A068D60}.Debug|x64.ActiveCfg = Debug|x64
+		{EEC9820A-E1DA-4906-A618-C7310A068D60}.Debug|x64.Build.0 = Debug|x64
+		{EEC9820A-E1DA-4906-A618-C7310A068D60}.Debug|x86.ActiveCfg = Debug|Win32
+		{EEC9820A-E1DA-4906-A618-C7310A068D60}.Debug|x86.Build.0 = Debug|Win32
+		{EEC9820A-E1DA-4906-A618-C7310A068D60}.Release|x64.ActiveCfg = Release|x64
+		{EEC9820A-E1DA-4906-A618-C7310A068D60}.Release|x64.Build.0 = Release|x64
+		{EEC9820A-E1DA-4906-A618-C7310A068D60}.Release|x86.ActiveCfg = Release|Win32
+		{EEC9820A-E1DA-4906-A618-C7310A068D60}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
