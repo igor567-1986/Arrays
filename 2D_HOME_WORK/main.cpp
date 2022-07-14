@@ -3,13 +3,14 @@ using namespace std;
 
 #define tab "\t"
 #define delimetr "\n------------------------------\n\n"
-#define SORT_2D
-void main()
+//#define SORT_2D
+int main()
 {
 	setlocale(LC_ALL, "");
 	const int ROWS = 5;
 	const int COLS = 5;
 	int A[ROWS][COLS];
+
 	//srand(time(NULL));
 	for (int i = 0; i < ROWS; i++)
 	{
@@ -18,7 +19,10 @@ void main()
 			A[i][j] = rand() % 25;
 		}
 	}
-	//выводим матрицы на экран:
+	
+
+#ifdef SORT_2D
+	//выводим матрицу на экран:
 	for (int i = 0; i < ROWS; i++)
 	{
 		for (int j = 0; j < COLS; j++)
@@ -28,7 +32,6 @@ void main()
 		cout << endl;
 	}
 	cout << delimetr;
-#ifdef SORT_2D
 	//сортировка массива
 	for (int i = 0; i < ROWS * COLS; i++)
 	{
@@ -62,8 +65,38 @@ void main()
 	}
 #endif // SORT_2D
 
+	int m, k,n,b;
+	for (int i = 0; i < ROWS * COLS; i++)
+	{
+		for (int j = 0; j < ROWS; j++)
+		{
+			for (int l = 0; l < COLS; l++)
+			{
 
-	// вывод отсортированого массива
+				for (k = j; k < ROWS; k++)
+				{
+					for (m = l + 1; m < COLS; m++)
+					{
+						if (A[j][l] == A[k][m])
+						{
+							A[k][m] = rand() % 25;
+							m--;
+						}
+					}
+				}
+				for (n = l; n < COLS; n++)
+				{
+					for (b = j + 1; b < ROWS; b++)
+						if (A[j][l] == A[b][n])
+						{
+							A[b][n] = rand() % 25;
+							b--;
+						}
+				}
+			}
+		}
+	}
+			// вывод  массива
 	for (int i = 0; i < ROWS; i++)
 	{
 		for (int j = 0; j < COLS; j++)
@@ -72,4 +105,5 @@ void main()
 		}
 		cout << endl;
 	}
+	return 0;
 }
