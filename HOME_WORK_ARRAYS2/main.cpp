@@ -3,8 +3,9 @@
 using namespace std;
 
 #define tab "\t"
-//#define SHIFT_LEFT_RIGHT
+#define SHIFT_LEFT_RIGHT
 //#define UNIQUE_RANDOM1
+//#define povtor
 
 void main()
 {
@@ -28,13 +29,13 @@ void main()
 		}
 		arr[0] = buffer;
 		cout << endl;
-		system("CLS");
+		//system("CLS");
 		for (int i = 0; i < n; i++)
 		{
 			cout << arr[i] << tab;
 		}
 		cout << endl;
-		Sleep(1000);
+		//Sleep(1000);
 	}
 #endif // SHIFT_LEFT_RIGHT
 
@@ -59,12 +60,13 @@ void main()
 	}
 	cout << endl;
 #endif // UNIQUE_RANDOM1
+#ifdef povtor
 	cout << "Нахождение повторяющихся элементов массива." << endl;
 	int  arr[n];
 	srand(time(NULL));
 	for (int i = 0; i < n; i++)
 	{
-	   arr[i] = rand() % 5;		
+		arr[i] = rand() % 5;
 	}
 
 	for (int i = 0; i < n; i++)
@@ -87,7 +89,7 @@ void main()
 
 	}
 
-	int counter = 0, a=n+1;
+	int counter = 0, a = n + 1;
 	for (int i = 0; i < n; i++)
 	{
 		for (int j = i + 1; j < n; j++)
@@ -96,15 +98,17 @@ void main()
 			{
 				if (arr[i] == a)break;
 				counter++;
-			}	
+			}
 		}
-         if(counter==1) cout<< arr[i]<< " повторяется в массиве "<< counter << "раз"<<endl;
-		 if (counter > 3)
-		 {
-			 cout << arr[i] << " повторяется в массиве " << counter << "раза" << endl;
-			 a = arr[i];
-		 }
-        counter = 1;
+		if (counter == 1) cout << arr[i] << " повторяется в массиве " << counter << "раз" << endl;
+		if (counter > 3)
+		{
+			cout << arr[i] << " повторяется в массиве " << counter << "раза" << endl;
+			a = arr[i];
+		}
+		counter = 1;
 	}
-	
+
+#endif // DEBUG
+
 }
